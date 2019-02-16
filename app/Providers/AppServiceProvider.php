@@ -16,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Specified key was too long error, Laravel News post:
         Schema::defaultStringLength(191);
+        \Carbon\Carbon::setLocale('zh');
     }
 
     /**
